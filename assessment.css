@@ -6,7 +6,7 @@
 
 #scoreBoard th {
   font-weight: bold;
-  color: snow;
+  color: firebrick;
   border: solid black 1px;
   border-collapse: collapse;
 }
@@ -17,17 +17,27 @@
   border-right: solid black 1px;
   text-align: center;
   border-collapse: collapse;
-  background-color: cornflowerBlue;
+
 }
 
 caption {
   border-top: solid black 1px;
   border-left: solid black 1px;
   border-right: solid black 1px;
+  background-color: cornsilk;
 }
 
 td, th {
   border: solid black 1px;
+}
+
+tr:nth-child(even){
+  color: black;
+  background-color: cornsilk;
+}
+
+tr:nth-child(odd){
+  background-color: cornflowerBlue;
 }
 
 #teamRoster ul {
@@ -40,21 +50,26 @@ td, th {
 }
 
 img {
-  opacity: 0;
+  width: 150px;
+  height: 120px;
+  opacity: .2;
+  position: absolute;
+  down: 100px;
+  left: 60px;
 }
 
-body > ul > li:first-child {
+/* body > ul > li:first-child {
   background-image: url(https://upload.wikimedia.org/wikipedia/en/4/44/Denver_Broncos_logo.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  
+
 }
 
 body > ul > li:last-child {
   background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/5c/Chicago_Bears_logo.svg);
   background-repeat: no-repeat;
   background-size: contain;
-}
+} */
 
 blockquote {
   background-color: darkSlateBlue;
